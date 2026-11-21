@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "chestunlocker",
+  "version": "${version}",
+  "name": "Chest Unlocker",
+  "description": "Toggle-only chest unlocker. No GUI, no chat.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.chestunlocker.ChestUnlockerClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "chestunlocker.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
